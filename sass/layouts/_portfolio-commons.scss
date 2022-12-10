@@ -1,0 +1,30 @@
+.portfolio-list {
+    text-decoration: none;
+    color: var(--title-N3-text-color);
+}
+
+.header-container-port {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.title-none {
+    display: none;
+}
+
+.portfolio-list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.port-con-btn {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.port-ul-text {
+    margin: auto;
+}

@@ -1,0 +1,136 @@
+
+.header {
+    color: var(--title-text-color);
+&-container {
+    display: flex;
+    align-items: center;
+}
+
+
+&-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--title-text-color);
+    margin-right: 93px;
+    transition: var(--transition-ms);
+    
+    &:focus,
+    &:hover {
+    color: var(--accent-color);
+}
+
+}
+
+&-logo-web {
+    color: var(--accent-color);
+}
+
+&-nav {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+
+}
+
+&-nav-item {
+    display: block;
+    position: relative;
+    
+
+    &:hover .header-line {
+    background-color: var(--accent-color);
+    display: block;
+}
+}
+
+&-line-ac {
+    align-items: flex-end;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+&-nav-li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--title-N3-text-color);
+    display: block;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: var(--transition-ms);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+
+
+&-nav-li-ac {
+    color: var(--accent-color);
+
+}
+
+&-nav-contact {
+    color: var(--title-N2-text-color);
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: var(--transition-ms);
+
+    &:focus,
+    &:hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+}
+
+
+.contact-head {
+    align-items: baseline;
+    gap: 10px;
+    color: var(--title-N2-text-color);
+    fill: var(--title-N2-text-color);
+}
+
+&-nav-a {
+    margin-left: auto;
+}
+
+
+.head-cvg {
+    display: flex;
+    align-items: baseline;
+    fill: var(--title-N2-text-color);
+}
+
+.svg-header {
+    margin-right: 10px;
+}
+}
+
+
