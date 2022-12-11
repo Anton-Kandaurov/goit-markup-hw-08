@@ -57,12 +57,34 @@ button {
     padding-right: 15px;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         width: 450px;
     }
 
-    @media screen and (min-width:768px) {
+                @media screen and (min-width: 768px) {
             width: 738px;
     }
 
+        @media screen and (min-width: 1200px){
+        width: 1200px;
+    }
+
+}
+
+@mixin mobile {
+    @media screen and (min-width: 480px){
+     @content;
+    }
+}
+
+@mixin tabeltop {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
 }
