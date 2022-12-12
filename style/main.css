@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
 }
+.header-contact {
+  margin-left: auto;
+}
+.header-a {
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .header-a {
     position: absolute;
@@ -19,6 +25,10 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+}
+.headernavigation {
+  margin-right: auto;
+  display: block;
 }
 .header-logo {
   font-family: "Raleway";
@@ -92,13 +102,23 @@
   margin-left: auto;
   align-items: center;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: var(--transition-ms);
 }
 .header-nav-contact:focus, .header-nav-contact:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+@media screen and (max-width: 1199px) {
+  .header-nav-contact:focus, .header-nav-contact:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav-contact:focus, .header-nav-contact:hover {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header .contact-head {
   align-items: baseline;
@@ -109,18 +129,30 @@
 .header-nav-a {
   margin-left: auto;
 }
-.header .head-cvg {
+@media screen and (min-width: 768px) {
+  .header-nav-a {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav-a {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.head-cvg {
   display: flex;
   align-items: baseline;
   fill: var(--title-N2-text-color);
 }
-.header .svg-header {
+
+.svg-header {
   margin-right: 10px;
 }
 
 .hero {
-  max-width: 100%;
-  min-width: 100%;
   color: var(--basic-title-color);
   background-color: var(--hero-footer-color);
   padding: 200px 0px;
@@ -214,7 +246,6 @@
   }
 }
 .list-con-div {
-  display: flex;
   gap: 30px;
 }
 @media screen and (min-width: 480px) {
@@ -224,10 +255,10 @@
 }
 @media screen and (min-width: 768px) {
   .list-con-div {
-    display: inline;
+    display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .list-con-div {
     display: flex;
   }

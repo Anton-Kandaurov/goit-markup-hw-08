@@ -6,7 +6,12 @@
     align-items: center;
 }
 
+&-contact{
+    margin-left: auto;
+}
+
 &-a{
+    display: flex;
     @media screen and (max-width: 767px) {
         position: absolute;
         width: 1px;
@@ -23,6 +28,11 @@
         @media screen and (min-width: 768px) {}
     
         @media screen and (min-width: 1200px) {}
+}
+
+&navigation{
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -117,16 +127,28 @@
     margin-left: auto;
     align-items: center;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: var(--transition-ms);
-
     &:focus,
     &:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+
+    }
+    
+        @media screen and (max-width: 1199px) {
+            padding-top:0px;
+            padding-bottom: 0px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+         padding-top: 32px;
+         padding-bottom: 32px;
+        }
+    }
 }
-}
+
 
 
 .contact-head {
@@ -138,9 +160,26 @@
 
 &-nav-a {
     margin-left: auto;
+    
+    
+    @media screen and (min-width: 480px) {
+            
+        }
+    
+        @media screen and (min-width: 768px) {
+          display: block;
+          
+        }
+    
+        @media screen and (min-width: 1200px) {
+          display: flex;
+          padding-top: 32px;
+          padding-bottom: 32px;
+        }
+    }
+
+
 }
-
-
 .head-cvg {
     display: flex;
     align-items: baseline;
@@ -150,6 +189,6 @@
 .svg-header {
     margin-right: 10px;
 }
-}
+
 
 
