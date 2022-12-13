@@ -12,9 +12,10 @@
 &-li {
     border: 1px solid var(--icon-basic-color);
     border-radius: 5px;
-    width: 170px;
-    height: 92px;
+    width: 100%;
     transition: var(--transition-ms);
+    height: 92px;
+    
 
     &:focus,
     &:hover {
@@ -28,22 +29,32 @@
     &:focus .client-li {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-}
-}
-
-
-
-&-ul {
     
-    gap: 30px;
+    
+}
+@media screen and (min-width: 480px) {
+    width: 210px;
+}
 
+@media screen and (min-width: 768px) {
+    width: 226px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 170px;
+}
+
+}
+
+&-ul{
     @media screen and (min-width: 480px) {
-      flex-basis: calc((100% - 30px) );
-    }
-    
-        @media screen and (min-width: 768px) {
-
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
         }
+    
+        @media screen and (min-width: 768px) {}
     
         @media screen and (min-width: 1200px) {
             display: flex;

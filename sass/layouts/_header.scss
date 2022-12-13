@@ -6,8 +6,22 @@
     align-items: center;
 }
 
+
+
 &-contact{
-    margin-left: auto;
+    
+
+    @media screen and (min-width: 480px) {
+        margin-left: auto;
+    }
+    
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-left: auto;
+        }
 }
 
 &-a{
@@ -143,8 +157,7 @@
         }
     
         @media screen and (min-width: 1200px) {
-         padding-top: 32px;
-         padding-bottom: 32px;
+         
         }
     }
 }
@@ -190,5 +203,11 @@
     margin-right: 10px;
 }
 
+/*-------------------------modal--------------------------------------*/
 
+.modal-header{
 
+    &{
+       position: fixed; 
+    }
+}

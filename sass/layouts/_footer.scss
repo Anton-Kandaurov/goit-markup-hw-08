@@ -18,9 +18,12 @@
     align-items: baseline;
     @media screen and (min-width: 480px) {
         display: block;
+        justify-content: center;
     }
     
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 768px) {
+
+        }
     
         @media screen and (min-width: 1200px) {
     display: flex;
@@ -30,7 +33,19 @@
 &-addres {
     text-decoration: none;
     list-style-type: none;
-    margin-right: 70px;
+
+    @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
 }
 
 &-addres-map {
@@ -106,6 +121,8 @@
 
 }
 
+
+
 .svg{
     &-list-foot {
     display: flex;
@@ -136,12 +153,24 @@
 }
 }
 
+.foot-icon{
+
+    @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width: 1200px) {}
+}
+
 
 .spam {
-    justify-content: center;
     align-items: center;
     @media screen and (min-width: 480px) {
-
+         justify-content: center;
     }
     
         @media screen and (min-width: 768px) {}
