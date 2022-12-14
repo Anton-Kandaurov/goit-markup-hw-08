@@ -2,26 +2,32 @@
     &{
     color: var(--basic-title-color);
     background-color: var(--hero-footer-color);
-    padding: 200px 0px;
     margin: 0 auto;
-    background-image:
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-backround.jpg);
+    height: 100%;
+    background-image: url(../img/desktop-hero-1x.jpg);
+    background-position: center;
 
-    
     @media screen and (min-width: 480px){
-        max-width: 480px;
-        min-width: 450px;
-        height: 480px;
+    padding: 118px 0px;
+    max-width: 480px;
+        background-image:
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-hero-1x.jpg), max-width(480px) ;
     }
 
         @media screen and (min-width: 768px) {
+        padding: 118px 0px;
         max-width: 768px;
-        min-width: 450px;
+        background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-hero-1x.jpg),max-width(768px);
     }
 
-                @media screen and (min-width: 1200px) {
-            max-width: 1600px;
-            min-width: 1200px;
+             
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+             background-image:
+
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-hero-1x.jpg),max-width(1600px) ;
+               padding: 200px 0px;
         } 
     }
     

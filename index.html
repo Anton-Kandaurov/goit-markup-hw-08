@@ -22,7 +22,7 @@
     <a href="" class="header-logo"><span class="header-logo-web">Web</span>Studio</a>
     <nav class="header-navigation">
 
-  
+  <div class="menu">
     <ul class="header-nav haader-nav-a">
         <li class="header-nav-item">
           <a href="" class="header-nav-li-ac header-nav-li">Студія</a>
@@ -65,35 +65,40 @@
       </li>
     </ul>
     </div>
+
+
     </div>
 
 <!--------------------------------modal-header------------------------------------>
+<button type="button" class="modal-header-button" width="40px" height="40px">
+  <svg width="24px" height="16px">
+    <use href="./img/symbol-defs.svg#icon-menu_24px"></use>
+  </svg>
+</button>
 
-<div class="modal-header visually-hidden">
+<div class="modal-header ">
   <div class="container">
-
-    <button type="button" class="modal-header-button">
-      <svg>
-        <use href=""></use>
+    <button type="button" class="modal-header-buttob-svg">
+      <svg height="18px" width="18px" >
+        <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
       </svg>
     </button>
-
+     <nav>
     <ul class="modal-header-nav">
-      <li class="modal-header-nav-item">
-        <a href="" class="modal-header-nav-li-ac modal-header-nav-li">Студія</a>
+      <li class="modal-header-nav-li">
+        <a href="" class="modal-header-nav-li modal-header-nav-li-ac">Студія</a>
         <div class="modal-header-line-ac"></div>
       </li>
     
-      <li>
+      <li class="modal-header-nav-li">
         <a href="./portfolio.html" class="modal-header-nav-li">Портфоліо</a>
         <div class="modal-header-line"></div>
       </li>
-      <li>
+      <li class="modal-header-nav-li">
         <a href="" class="modal-header-nav-li">Контакти</a>
         <div class="modal-header-line"></div>
       </li>
     </ul>
-    
     </nav>
     <div class="modal-header-contact">
       <ul class="modal-header-nav modal-header-nav-a">
@@ -102,9 +107,6 @@
     
     
           <a href="mailto:info@devstudio.com" class="modal-header-nav-contact ">
-            <svg width="16px" height="12px" class="svg-modal-header">
-              <use href="./img/symbol-defs.svg#icon-gmail"></use>
-            </svg>
             info@devstudio.com
           </a>
         </li>
@@ -112,12 +114,18 @@
         <li class="contact-modal-header">
     
           <a href="tel:+380961111111" class="modal-header-nav-contact ">
-            <svg width="10px" height="16px" class="svg-modal-header">
-              <use href="./img/symbol-defs.svg#icon-Vector-tel"></use>
-            </svg>
             +38 096 111 11 11
           </a>
         </li>
+      </ul>
+
+    </div>
+    <div class="modal-header-cmi">
+      <ul class="modal-header-cmi-ul">
+        <li><a href="" class="modal-header-cmi-li">Instagram</a></li>
+        <li><a href="" class="modal-header-cmi-li">Twitter</a></li>
+        <li><a href="" class="modal-header-cmi-li">Facebook</a></li>
+        <li><a href="" class="modal-header-cmi-li">LinkedIn</a></li>
       </ul>
     </div>
   </div>
@@ -130,6 +138,11 @@
     
         <section class="hero">
             <div class="hero-baner container">
+              <picture>
+                <source srcset="./img/desktop-team1-1x.jpg 1x, ./img/desktop-team1-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/tablet-team1-1x.jpg 1x, ./img/tablet-team1-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/mob-team1-1x.jpg 1x, ./img/mob-team1-2x.jpg 2x" media="(max-width: 767px)" />
+              </picture>
             <h1 class="hero-h1">Ефективні рішення для<br> вашого бізнесу</h1>
             <button type="button" class="button" data-modal-open>Замовити послугу</button>
             </div>
@@ -206,7 +219,7 @@
         <ul class="work-list">
             <li class="work-list-wrap">
               <picture>
-                <source srcset="./img/box-1.png 1x, ./img/desktop-box-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/box-1.png 1x, ./img/desktop-box-2x.jpg 2x" media="(min-width: 1200px)" />
               </picture>
                 <img src="./img/box-1.png" alt="" width="370px" height="294px">
                 <p class="work-kist-text">Десктопні додатки</p>
@@ -214,7 +227,7 @@
 
             <li class="work-list-wrap">
               <picture>
-                <source srcset="./img/box-2.png 1x, ./img/desktop-box2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/box-2.png 1x, ./img/desktop-box2-2x.jpg 2x" media="(min-width: 1200px)" />
               </picture>
               <img src="./img/box-2.png" alt="" width="370px" height="294px">
               <p class="work-kist-text">Мобільні додатки</p>
@@ -222,7 +235,7 @@
 
             <li class="work-list-wrap">
               <picture>
-                <source srcset="./img/box-3.png 1x, ./img/desktop-box3-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/box-3.png 1x, ./img/desktop-box3-2x.jpg 2x" media="(min-width: 1200px)" />
               </picture>
               <img src="./img/box-3.png" alt="" width="370px" height="294px">
               <p class="work-kist-text">Дизайнерські рішення</p>
@@ -239,9 +252,9 @@
           <ul class="team-list team-con-ul">
           <li class="team-list-li">
             <picture>
-              <source srcset="./img/desktop-team1-1x.jpg 1x, ./img/desktop-team1-2x.jpg 2x" media="(min-width: 1200px)">
-              <source srcset="./img/tablet-team1-1x.jpg 1x, ./img/tablet-team1-2x.jpg 2x" media="(min-width: 768px)">
-              <source srcset="./img/mob-team1-1x.jpg 1x, ./img/mob-team1-2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="./img/desktop-team1-1x.jpg 1x, ./img/desktop-team1-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet-team1-1x.jpg 1x, ./img/tablet-team1-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mob-team1-1x.jpg 1x, ./img/mob-team1-2x.jpg 2x" media="(max-width: 767px)" />
             </picture>
             <img src="./img/mob-team1-1x.jpg" alt="" width="270" class="team-img">
               <div class="team-con-text">
@@ -288,9 +301,9 @@
 
           <li class="team-list-li">
             <picture>
-              <source srcset="./img/desktop-team2-1x.jpg 1x, ./img/desktop-team2-2x.jpg 2x" media="(min-width: 1200px)">
-              <source srcset="./img/tablet-team2-1x.jpg 1x, ./img/tablet-team2-2x.jpg 2x" media="(min-width: 768px)">
-              <source srcset="./img/mob-team2-1x.jpg 1x, ./img/mob-team2-2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="./img/desktop-team2-1x.jpg 1x, ./img/desktop-team2-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet-team2-1x.jpg 1x, ./img/tablet-team2-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mob-team2-1x.jpg 1x, ./img/mob-team2-2x.jpg 2x" media="(max-width: 767px)" />
             </picture>
             <img src="./img/mob-team2-1x.jpg" alt="" width="270">
             <div class="team-con-text">
@@ -336,9 +349,9 @@
 
           <li class="team-list-li">
             <picture>
-              <source srcset="./img/desktop-team3-1x.jpg 1x, ./img/desktop-team3-2x.jpg 2x" media="(min-width: 1200px)">
-              <source srcset="./img/tablet-team3-1x.jpg 1x, ./img/tablet-team3-2x.jpg 2x" media="(min-width: 768px)">
-              <source srcset="./img/mob-team3-1x.jpg 1x, ./img/mob-team3-2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="./img/desktop-team3-1x.jpg 1x, ./img/desktop-team3-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet-team3-1x.jpg 1x, ./img/tablet-team3-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mob-team3-1x.jpg 1x, ./img/mob-team3-2x.jpg 2x" media="(max-width: 767px)" />
             </picture>
             <img src="./img/mob-team3-1x.jpg" alt="" width="270">
             <div class="team-con-text">
@@ -384,9 +397,9 @@
 
           <li class="team-list-li">
             <picture>
-              <source srcset="./img/desktop-team4-1x.jpg 1x, ./img/desktop-team4-2x.jpg 2x" media="(min-width: 1200px)">
-              <source srcset="./img/tablet-team4-1x.jpg 1x, ./img/tablet-team4-2x.jpg 2x" media="(min-width: 768px)">
-              <source srcset="./img/mob-team4-1x.jpg 1x, ./img/mob-team4-2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="./img/desktop-team4-1x.jpg 1x, ./img/desktop-team4-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet-team4-1x.jpg 1x, ./img/tablet-team4-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mob-team4-1x.jpg 1x, ./img/mob-team4-2x.jpg 2x" media="(max-width: 767px)" />
             </picture>
             <img src="./img/mob-team4-1x.jpg" alt="" width="270">
             <div class="team-con-text">
