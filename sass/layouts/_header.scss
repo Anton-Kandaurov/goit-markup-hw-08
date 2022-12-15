@@ -4,6 +4,7 @@
 &-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -62,6 +63,7 @@
     transition: var(--transition-ms);
     padding-top: 16px;
     padding-bottom: 16px;
+    display: block;
     
     &:focus,
     &:hover {
@@ -73,7 +75,7 @@
     }
 
     @media screen and (min-width:768px) {
-    margin-right: 93px;
+       margin-right: 93px;
     }
 }
 
@@ -108,7 +110,6 @@
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-    position: absolute;
     bottom: 0;
 }
 
@@ -138,6 +139,11 @@
 &-nav-li-ac {
     color: var(--accent-color);
 
+}
+
+&-navigation{
+
+    margin-left: 88px;
 }
 
 &-nav-contact {

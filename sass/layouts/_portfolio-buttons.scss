@@ -2,7 +2,6 @@
 
     color: var(--title-N3-text-color);
     background-color: var(--backroun-color);
-    display: inline-block;
     border: transparent;
     cursor: pointer;
     font-weight: 500;
@@ -23,7 +22,30 @@
     box-shadow: 1px 1px 2px 2px var(--title-N2-text-color);
     color: var(--basic-title-color);
     background-color: var(--accent-color);
+
+        
 }
+}
+
+.port-con-btn{
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        }
+    
+        @media screen and (min-width: 768px) {
+          
+        }
+    
+        @media screen and (min-width: 1200px) {
+
+        }
+}
+
+.portfolio-container-button{
+    display: flex;
+    gap:8px;
 }
 
 

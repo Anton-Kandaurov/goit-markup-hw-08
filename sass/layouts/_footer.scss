@@ -7,7 +7,7 @@
 }
 
     @media screen and (min-width: 768px){ 
-      
+    
     }
 
     @media screen and (min-width: 1200px) {
@@ -22,11 +22,17 @@
     }
     
         @media screen and (min-width: 768px) {
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
         }
     
         @media screen and (min-width: 1200px) {
-    display: flex;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap:0;
 }
 }
 
@@ -37,11 +43,10 @@
 
     @media screen and (max-width: 767px) {
             margin-bottom: 60px;
-            text-align: center;
         }
     
-        @media screen and (min-width: 768px) {
-            text-align: start;
+        @media screen and (max-width: 1199px) {
+             text-align: center;
         }
     
         @media screen and (min-width: 1200px) {
@@ -86,13 +91,9 @@
 }
 
 .foot-address{
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
       
         text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-        text-align: start;
     }
 
     @media screen and (min-width: 1200px) {
@@ -115,13 +116,9 @@
     &:hover {
     color: var(--accent-color);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         
             text-align: center;
-        }
-    
-        @media screen and (min-width: 768px) {
-            text-align: start;
         }
     
         @media screen and (min-width: 1200px) {
@@ -148,13 +145,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-
-    @media screen and (max-width: 767px) {
-            text-align: center;
-        }
     
-        @media screen and (min-width: 768px) {
-            text-align: start;
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+
         }
     
         @media screen and (min-width: 1200px) {
@@ -170,13 +164,9 @@
     &-list-foot {
     display: flex;
     gap: 10px;
-
-    @media screen and (max-width: 767px) {
-            justify-content: center;
-        }
     
-        @media screen and (min-width: 768px) {
-            justify-content: start;
+        @media screen and (max-width: 1199px) {
+            justify-content: center;
         }
     
         @media screen and (min-width: 1200px) {}
@@ -212,11 +202,13 @@
 
     @media screen and (max-width: 767px) {
             margin-bottom: 60px;
+            
+        }
+    
+        @media screen and (max-width: 1199px) {
             justify-content: center;
             align-items: center;
         }
-    
-        @media screen and (min-width: 768px) {}
     
         @media screen and (min-width: 1200px) {}
 }
@@ -224,18 +216,14 @@
 
 .spam {
     align-items: center;
-    @media screen and (max-width: 767px) {
-         justify-content: center;
-         text-align: center;
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+        text-align: center;
     }
-    
-        @media screen and (min-width: 768px) {
-        justify-content: start;
-        text-align: start;
-        }
     
         @media screen and (min-width: 1200px) {
             margin-left: 93px;
+  
         }
 
     &-form{
@@ -244,8 +232,6 @@
         display: block;
         justify-content: center;
     }
-    
-        @media screen and (min-width: 768px) {}
     
         @media screen and (min-width: 1200px) {
             display: flex;

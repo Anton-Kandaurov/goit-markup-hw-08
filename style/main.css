@@ -4,6 +4,7 @@
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .header-contact {
@@ -54,6 +55,7 @@
   transition: var(--transition-ms);
   padding-top: 16px;
   padding-bottom: 16px;
+  display: block;
 }
 .header-logo:focus, .header-logo:hover {
   color: var(--accent-color);
@@ -92,7 +94,6 @@
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  position: absolute;
   bottom: 0;
 }
 .header-nav-li {
@@ -114,6 +115,9 @@
 }
 .header-nav-li-ac {
   color: var(--accent-color);
+}
+.header-navigation {
+  margin-left: 88px;
 }
 .header-nav-contact {
   color: var(--title-N2-text-color);
@@ -466,7 +470,10 @@
 }
 @media screen and (min-width: 768px) {
   .list-con-div {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -610,7 +617,10 @@
 }
 @media screen and (min-width: 768px) {
   .team-con-ul {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -817,9 +827,20 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer .foot-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer .foot-con {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 0;
   }
 }
 .footer-addres {
@@ -829,12 +850,11 @@
 @media screen and (max-width: 767px) {
   .footer-addres {
     margin-bottom: 60px;
-    text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-addres {
-    text-align: start;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -869,14 +889,9 @@
 .footer-nav-contact:focus, .footer-nav-contact:hover {
   color: var(--accent-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer .foot-address {
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer .foot-address {
-    text-align: start;
   }
 }
 .footer-logo {
@@ -892,14 +907,9 @@
 .footer-logo:focus, .footer-logo:hover {
   color: var(--accent-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-logo:focus, .footer-logo:hover {
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-logo:focus, .footer-logo:hover {
-    text-align: start;
   }
 }
 .footer-adres {
@@ -916,28 +926,18 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer .foot-title-svg {
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer .foot-title-svg {
-    text-align: start;
   }
 }
 .svg-list-foot {
   display: flex;
   gap: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .svg-list-foot {
     justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .svg-list-foot {
-    justify-content: start;
   }
 }
 .svg-li-foot {
@@ -961,6 +961,10 @@
 @media screen and (max-width: 767px) {
   .foot-icon {
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .foot-icon {
     justify-content: center;
     align-items: center;
   }
@@ -968,16 +972,10 @@
 .spam {
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .spam {
     justify-content: center;
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .spam {
-    justify-content: start;
-    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1106,7 +1104,6 @@
 }
 
 .modal {
-  width: 528px;
   min-height: 581px;
   background-color: var(--basic-title-color);
   top: 50%;
@@ -1115,6 +1112,21 @@
   border-radius: 5px;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal-button {
   border-radius: 50%;
@@ -1193,8 +1205,6 @@
 }
 .modal .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1, 7142;
   letter-spacing: 0.03em;
   color: var(--title-N2-text-color);
   display: flex;
@@ -1202,6 +1212,18 @@
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .modal .check-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal .check-text {
+    font-size: 14px;
+    line-height: 1.7142;
+  }
 }
 .modal .check-text::before {
   content: "";
@@ -1304,7 +1326,6 @@
 .button-portfolio {
   color: var(--title-N3-text-color);
   background-color: var(--backroun-color);
-  display: inline-block;
   border: transparent;
   cursor: pointer;
   font-weight: 500;
@@ -1324,6 +1345,18 @@
   box-shadow: 1px 1px 2px 2px var(--title-N2-text-color);
   color: var(--basic-title-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .port-con-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+.portfolio-container-button {
+  display: flex;
+  gap: 8px;
 }
 
 .portfolio {
@@ -1346,34 +1379,92 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    justify-content: center;
+  }
 }
 .portfolio-list > .port-thumb {
   flex-basis: 33.3333333333%;
 }
 .portfolio .port-list-text {
-  padding: 20px 24px;
   border-bottom: 1px solid #ECECEC;
   border-left: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .portfolio .port-list-text {
+    padding: 20px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .port-list-text {
+    padding: 20px 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .port-list-text {
+    padding: 20px 24px;
+  }
 }
 .portfolio .footer-port {
   background-color: var(--hero-footer-color);
 }
 .portfolio .port-list-img {
   display: block;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .portfolio .port-list-img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .port-list-img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .port-list-img {
+    width: 370px;
+  }
 }
 .portfolio .header-container-port {
   border-bottom: 1px solid #ECECEC;
 }
 .portfolio .portfolio-list-li {
-  width: 370px;
   text-decoration: none;
 }
 .portfolio .portfolio-list-li:hover, .portfolio .portfolio-list-li:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 480px) {
+  .portfolio .portfolio-list-li:hover, .portfolio .portfolio-list-li:focus {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-list-li:hover, .portfolio .portfolio-list-li:focus {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio-list-li:hover, .portfolio .portfolio-list-li:focus {
+    width: 370px;
+  }
 }
 .portfolio .portfolio-list-li:hover .portfolio-list-scrol {
   transform: translateY(0);
@@ -1386,10 +1477,20 @@
   font-size: 18px;
   line-height: 1.5555;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
   transform: translateY(100%);
   transition: var(--transition-ms);
   overflow: auto;
+  height: 100%;
+}
+@media screen and (min-width: 480px) {
+  .portfolio .portfolio-list-scrol {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-list-scrol {
+    padding: 63px 24px;
+  }
 }
 .list-portfolio:focus .portfolio .portfolio-list-scrol-list-scrol {
   transform: translateY(0);

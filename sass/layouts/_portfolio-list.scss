@@ -19,8 +19,20 @@
 &-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     gap: 30px;
+
+    @media screen and (min-width: 480px) {
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            justify-content: start;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+        }
 }
 
 
@@ -29,11 +41,22 @@
 }
 
 .port-list-text {
-    padding: 20px 24px;
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
     text-decoration: none;
+
+    @media screen and (min-width: 480px) {
+            padding: 20px 24px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding: 20px 17px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 20px 24px;
+        }
 }
 
 
@@ -43,6 +66,19 @@
 
 .port-list-img {
     display: block;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
 }
 
 .header-container-port {
@@ -52,13 +88,23 @@
 
 
 .portfolio-list-li {
-    width: 370px;
     text-decoration: none;
-
     &:hover,
     &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
 }
+
 
     &:hover .portfolio-list-scrol {
     transform: translateY(0);
@@ -75,10 +121,22 @@
     font-size: 18px;
     line-height: 1.5555;
     letter-spacing: 0.03em;
-    padding: 63px 24px;
     transform: translateY(100%);
     transition: var(--transition-ms);
     overflow: auto;
+    height: 100%;
+
+    @media screen and (min-width: 480px) {
+            padding: 77px 24px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding: 63px 24px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            
+        }
 
     .list-portfolio:focus &-list-scrol {
     transform: translateY(0);

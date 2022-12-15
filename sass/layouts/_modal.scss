@@ -8,7 +8,6 @@
 }
 
 .modal {
-    width: 528px;
     min-height: 581px;
     background-color: var(--basic-title-color);
     top: 50%;
@@ -17,6 +16,18 @@
     border-radius: 5px;
     transform: translate(-50%, -50%);
     padding: 40px;
+
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+        }
 
 &-button {
     border-radius: 50%;
@@ -118,8 +129,6 @@
 
 .check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1, 7142;
     letter-spacing: 0.03em;
     color: var(--title-N2-text-color);
     display: flex;
@@ -127,6 +136,20 @@
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.7142;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            
+        }
 
 &::before {
     content: '';

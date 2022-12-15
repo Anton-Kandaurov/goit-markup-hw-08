@@ -22,22 +22,22 @@
         <a href="" class="header-logo"><span class="header-logo-web">Web</span>Studio</a>
         <nav class="header-navigation">
 
-
-            <ul class="header-nav haader-nav-a">
-                <li class="header-nav-item">
-                    <a href="./index.html" class=" header-nav-li">Студія</a>
-            
-                </li>
-            
-                <li class="header-nav-item">
-                    <a href="./portfolio.html" class="header-nav-li header-nav-li-ac">Портфоліо</a>
-                    <div class="header-line-ac"></div>
-                </li>
-            
-                <li class="header-nav-item">
-                    <a href="" class="header-nav-li">Контакти</a>
-                </li>
-            </ul>
+            <div class="menu">
+                <ul class="header-nav haader-nav-a">
+                    <li class="header-nav-item">
+                        <a href="./index.html" class=" header-nav-li">Студія</a>
+                        <div class="header-line"></div>
+                    </li>
+                    
+                    <li>
+                        <a href="./portfolio.html" class="header-nav-li header-nav-li-ac">Портфоліо</a>
+                        <div class="header-line-ac"></div>
+                    </li>
+                    <li>
+                        <a href="" class="header-nav-li">Контакти</a>
+                        <div class="header-line"></div>
+                    </li>
+                </ul>
 
         </nav>
         <div class="header-contact">
@@ -65,60 +65,69 @@
                 </li>
             </ul>
         </div>
+
+        <button type="button" class="modal-header-button" width="40px" height="40px" data-menu-open>
+            <svg width="24px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+        </button>
     </div>
 
     <!--------------------------------modal-header------------------------------------>
 
-    <div class="modal-header visually-hidden">
+
+    <div class="modal-header visually-hidden" data-menu>
         <div class="container">
-
-            <button type="button" class="modal-header-button">
-                <svg>
-                    <use href=""></use>
-                </svg>
-            </button>
-
-            <ul class="header-nav haader-nav-a">
-                <li class="header-nav-item">
-                    <a href="./index.html" class=" header-nav-li">Студія</a>
-            
-                </li>
-            
-                <li class="header-nav-item">
-                    <a href="./portfolio.html" class="header-nav-li header-nav-li-ac">Портфоліо</a>
-                    <div class="header-line-ac"></div>
-                </li>
-            
-                <li class="header-nav-item">
-                    <a href="" class="header-nav-li">Контакти</a>
-                </li>
-            </ul>
-
-            </nav>
-            <div class="modal-header-contact">
-                <ul class="modal-header-nav modal-header-nav-a">
-                    <li class="contact-modal-header">
-
-
-
-                        <a href="mailto:info@devstudio.com" class="modal-header-nav-contact ">
-                            <svg width="16px" height="12px" class="svg-modal-header">
-                                <use href="./img/symbol-defs.svg#icon-gmail"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
+            <div>
+                <button type="button" class="modal-header-buttob-svg" data-menu-close>
+                    <svg height="18px" width="18px">
+                        <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="modal-header-nav">
+                    <li class="modal-header-nav-li">
+                        <a href="./index.html" class="modal-header-nav-li ">Студія</a>
                     </li>
-
-                    <li class="contact-modal-header">
-
-                        <a href="tel:+380961111111" class="modal-header-nav-contact ">
-                            <svg width="10px" height="16px" class="svg-modal-header">
-                                <use href="./img/symbol-defs.svg#icon-Vector-tel"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
+                    
+                    <li class="modal-header-nav-li">
+                        <a href="./portfolio.html" class="modal-header-nav-li modal-header-nav-li-ac">Портфоліо</a>
                     </li>
-                </ul>
+                        <li class="modal-header-nav-li">
+                            <a href="" class="modal-header-nav-li">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <div class="modal-header-contact">
+                    <ul class="modal-header-nav-a">
+                        <li class="contact-modal-header">
+
+                            <a href="tel:+380961111111" class="modal-header-nav-contact-tel ">
+                                +38 096 111 11 11
+                            </a>
+
+
+                        </li>
+
+                        <li class="contact-modal-header">
+
+                            <a href="mailto:info@devstudio.com" class="modal-header-nav-contact-mail ">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="modal-header-cmi">
+                    <ul class="modal-header-cmi-ul">
+                        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Instagram</a></li>
+                        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Twitter</a></li>
+                        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Facebook</a></li>
+                        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -132,11 +141,15 @@
         <div class="container">
         <h1 class="title-none">Portfolio</h1>
         <ul class="port-con-btn">
+            <div class="portfolio-container-button">
             <li><button type="button" class="button-portfolio">Усі</button></li>
             <li><button type="button" class="button-portfolio">Веб-сайти</button></li>
             <li><button type="button" class="button-portfolio">Додатки</button></li>
+            </div>
+            <div class="portfolio-container-button">
             <li><button type="button" class="button-portfolio">Дизайн</button></li>
             <li><button type="button" class="button-portfolio">Маркетинг</button></li>
+            </div>
         </ul>
 <!----------list---------->
         <ul class="portfolio-list">
@@ -149,7 +162,7 @@
                         <source srcset="./img/tabelt-project1-1x.jpg 1x, ./img/tabelt-project1-2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./img/mob-project1-1x.jpg 1x, ./img/mob-project1-2x.jpg 2x" media="(max-width: 767px)">
                     </picture>
-                <img alt="portfolio-list-li" src="./img/desktop-project1-1x.jpg" winght="370"  height="294px" class="port-list-img">
+                <img alt="portfolio-list-li" src="./img/desktop-project1-1x.jpg"  class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -169,7 +182,7 @@
                             <source srcset="./img/tabelt-project2-1x.jpg 1x, ./img/tabelt-project2-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project2-1x.jpg 1x, ./img/mob-project2-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-project2-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-project2-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -188,7 +201,7 @@
                             <source srcset="./img/tabelt-project3-1x.jpg 1x, ./img/tabelt-project3-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project3-1x.jpg 1x, ./img/mob-project3-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec3-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec3-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -207,7 +220,7 @@
                             <source srcset="./img/tabelt-project4-1x.jpg 1x, ./img/tabelt-project4-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project4-1x.jpg 1x, ./img/mob-project4-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec4-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec4-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -226,7 +239,7 @@
                             <source srcset="./img/tabelt-project5-1x.jpg 1x, ./img/tabelt-project5-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project5-1x.jpg 1x, ./img/mob-project5-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec5-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec5-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -243,7 +256,7 @@
                             <source srcset="./img/tabelt-project6-1x.jpg 1x, ./img/tabelt-project6-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project6-1x.jpg 1x, ./img/mob-project6-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec6-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec6-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -261,7 +274,7 @@
                             <source srcset="./img/tabelt-project7-1x.jpg 1x, ./img/tabelt-project7-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project7-1x.jpg 1x, ./img/mob-project7-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec7-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec7-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -279,7 +292,7 @@
                             <source srcset="./img/tabelt-project8-1x.jpg 1x, ./img/tabelt-project8-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project8-1x.jpg 1x, ./img/mob-project8-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec8-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec8-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -297,7 +310,7 @@
                             <source srcset="./img/tabelt-project9-1x.jpg 1x, ./img/tabelt-project9-2x.jpg 2x" media="(min-width: 768px)" />
                             <source srcset="./img/mob-project9-1x.jpg 1x, ./img/mob-project9-2x.jpg 2x" media="(max-width: 767px)" />
                         </picture>
-                <img alt="" src="./img/desktop-projec9-1x.jpg" winght="370" height="294px" class="port-list-img">
+                <img alt="" src="./img/desktop-projec9-1x.jpg" class="port-list-img">
                 <p class="portfolio-list-scrol">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -371,16 +384,18 @@
             <form class="spam-form">
                 <input type="email" class="spam-input" required placeholder="E-mail" name="user-email-spam"
                     title="info@devstudio.com">
-                <button class="spam-btn"><span class="spam-btn-text">Підписатися</span>
-                    <svg class="spam-icon-send">
-                        <use href="./img/symbol-defs.svg#icon-icon-send"></use>
-                    </svg>
+                <button class="spam-btn">
+                    <div class="spam-btn-div">
+                        <span class="spam-btn-text">Підписатися</span>
+                        <svg class="spam-icon-send">
+                            <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </div>
                 </button>
             </form>
         </div>
-
-        </ul>
     </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>
