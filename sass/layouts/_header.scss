@@ -59,7 +59,6 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--title-text-color);
-    margin-right: 93px;
     transition: var(--transition-ms);
     padding-top: 16px;
     padding-bottom: 16px;
@@ -71,6 +70,10 @@
     @media screen and (max-width:767px) {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    @media screen and (min-width:768px) {
+    margin-right: 93px;
     }
 }
 
@@ -248,7 +251,14 @@
         background-color: var(--basic-title-color);
         padding: 48px 40px;
         list-style: none;
-
+        z-index: 1;
+        > .container{
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            overflow: auto;
+        }
     }
 
     &-button{ 
@@ -256,7 +266,8 @@
         border: none;
         justify-content: center;
         align-items: center;
-
+        position: relative;
+        right: 0;
         @media screen and (max-width: 767px){
           
         }
@@ -283,13 +294,15 @@
         right: 15px;
         background-color: transparent;
         border: none;
+        z-index: 1;
+
+        &:focus,
+        &:hover{
+            fill: var(--accent-color);
+        }
     }
 
-    &-nav{
-        margin-bottom: auto;
-        
 
-    }
 
     &-nav-li{
         margin-bottom: 30px;
@@ -309,27 +322,60 @@
     }
 
     &-nav-li:last-of-type {
-        margin-bottom: auto;
+        margin-bottom:0;
     }
 
     &-nav-li-ac{
         color: var(--accent-color);
     }
 
-    &-nav-contact{
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 40px;
-        letter-spacing: 0.02em;
-        color: var(--title-text-color);
-        transition: var(--transition-ms);
-        text-decoration: none;
-
-        &:focus,
-        &:hover {
-                color: var(--accent-color);
-            }
+    &-contact{
+        margin-top: auto;
+        display: block;
+        margin-bottom: 64px;
     }
+
+    .contact-modal-header:first-of-type{
+        margin-bottom: 32px;
+        }
+
+    &-nav-contact{
+        
+
+        &-tel{
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: var(--accent-color);
+            transition: var(--transition-ms);
+            text-decoration: none;
+            margin-bottom: 32px;
+            &:focus,
+            &:hover {
+                color: var(--title-N2-text-color);
+            }
+        }
+
+        &-mail{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: var(--title-N2-text-color) ;
+            transition: var(--transition-ms);
+            text-decoration: none;
+            &:focus,
+            &:hover {
+                    color: var(--accent-color);
+                }
+        }
+       
+
+        
+    }
+
+
 
    &-cmi{
     &{
@@ -342,6 +388,12 @@
     }
 
     &-li{
+        
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &-a{
         list-style: none;
         text-decoration: none;
         font-style: normal;
@@ -350,12 +402,18 @@
         line-height: 1.2222;
         letter-spacing: 0.02em;
         color: var(--accent-color);
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);
+
+        &:focus,
+        &:hover{
+            color: var(--title-text-color);
+        }
+    }
     }
 
     &-li:last-of-type{
     border-right: none;
     }
+
+    
    }
 }

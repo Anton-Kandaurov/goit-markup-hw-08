@@ -51,7 +51,6 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--title-text-color);
-  margin-right: 93px;
   transition: var(--transition-ms);
   padding-top: 16px;
   padding-bottom: 16px;
@@ -63,6 +62,11 @@
   .header-logo:focus, .header-logo:hover {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-logo:focus, .header-logo:hover {
+    margin-right: 93px;
   }
 }
 .header-logo-web {
@@ -209,12 +213,22 @@
   background-color: var(--basic-title-color);
   padding: 48px 40px;
   list-style: none;
+  z-index: 1;
+}
+.modal-header > .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: auto;
 }
 .modal-header-button {
   background-color: transparent;
   border: none;
   justify-content: center;
   align-items: center;
+  position: relative;
+  right: 0;
 }
 @media screen and (min-width: 768px) {
   .modal-header-button {
@@ -238,9 +252,10 @@
   right: 15px;
   background-color: transparent;
   border: none;
+  z-index: 1;
 }
-.modal-header-nav {
-  margin-bottom: auto;
+.modal-header-buttob-svg:focus, .modal-header-buttob-svg:hover {
+  fill: var(--accent-color);
 }
 .modal-header-nav-li {
   margin-bottom: 30px;
@@ -257,21 +272,42 @@
   color: var(--accent-color);
 }
 .modal-header-nav-li:last-of-type {
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 .modal-header-nav-li-ac {
   color: var(--accent-color);
 }
-.modal-header-nav-contact {
+.modal-header-contact {
+  margin-top: auto;
+  display: block;
+  margin-bottom: 64px;
+}
+.modal-header .contact-modal-header:first-of-type {
+  margin-bottom: 32px;
+}
+.modal-header-nav-contact-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--accent-color);
+  transition: var(--transition-ms);
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+.modal-header-nav-contact-tel:focus, .modal-header-nav-contact-tel:hover {
+  color: var(--title-N2-text-color);
+}
+.modal-header-nav-contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--title-N2-text-color);
   transition: var(--transition-ms);
   text-decoration: none;
 }
-.modal-header-nav-contact:focus, .modal-header-nav-contact:hover {
+.modal-header-nav-contact-mail:focus, .modal-header-nav-contact-mail:hover {
   color: var(--accent-color);
 }
 .modal-header-cmi {
@@ -282,6 +318,11 @@
   display: flex;
 }
 .modal-header-cmi-li {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal-header-cmi-li-a {
   list-style: none;
   text-decoration: none;
   font-style: normal;
@@ -290,8 +331,9 @@
   line-height: 1.2222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+}
+.modal-header-cmi-li-a:focus, .modal-header-cmi-li-a:hover {
+  color: var(--title-text-color);
 }
 .modal-header-cmi-li:last-of-type {
   border-right: none;
@@ -314,7 +356,6 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 0px;
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-hero-1x.jpg), max-width(768px);
   }
@@ -785,10 +826,15 @@
   text-decoration: none;
   list-style-type: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-addres {
     margin-bottom: 60px;
-    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-addres {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -823,6 +869,16 @@
 .footer-nav-contact:focus, .footer-nav-contact:hover {
   color: var(--accent-color);
 }
+@media screen and (max-width: 767px) {
+  .footer .foot-address {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .foot-address {
+    text-align: start;
+  }
+}
 .footer-logo {
   color: var(--basic-title-color);
   font-family: "Raleway";
@@ -835,6 +891,16 @@
 }
 .footer-logo:focus, .footer-logo:hover {
   color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .footer-logo:focus, .footer-logo:hover {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-logo:focus, .footer-logo:hover {
+    text-align: start;
+  }
 }
 .footer-adres {
   margin-top: 20px;
@@ -850,10 +916,29 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
+@media screen and (max-width: 767px) {
+  .footer .foot-title-svg {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .foot-title-svg {
+    text-align: start;
+  }
+}
 .svg-list-foot {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .svg-list-foot {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .svg-list-foot {
+    justify-content: start;
+  }
 }
 .svg-li-foot {
   width: 44px;
@@ -873,7 +958,7 @@
   fill: var(--basic-title-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .foot-icon {
     margin-bottom: 60px;
     justify-content: center;
@@ -883,9 +968,16 @@
 .spam {
   align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .spam {
     justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .spam {
+    justify-content: start;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -899,6 +991,7 @@
 @media screen and (min-width: 480px) {
   .spam-form {
     display: block;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -949,8 +1042,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 2.25;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -958,7 +1049,34 @@
   border: none;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+}
+@media screen and (max-width: 767px) {
+  .spam-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .spam-btn {
+    display: flex;
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .spam-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .spam-btn-div {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .spam-btn-div {
+    display: flex;
+  }
 }
 .spam-btn-text {
   font-family: "Roboto";

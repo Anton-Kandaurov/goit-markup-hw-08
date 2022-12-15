@@ -66,19 +66,20 @@
     </ul>
     </div>
 
-
-    </div>
-
-<!--------------------------------modal-header------------------------------------>
-<button type="button" class="modal-header-button" width="40px" height="40px">
+<button type="button" class="modal-header-button" width="40px" height="40px" data-menu-open>
   <svg width="24px" height="16px">
     <use href="./img/symbol-defs.svg#icon-menu_24px"></use>
   </svg>
 </button>
+    </div>
 
-<div class="modal-header ">
+<!--------------------------------modal-header------------------------------------>
+
+
+<div class="modal-header visually-hidden" data-menu>
   <div class="container">
-    <button type="button" class="modal-header-buttob-svg">
+     <div>
+    <button type="button" class="modal-header-buttob-svg" data-menu-close>
       <svg height="18px" width="18px" >
         <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
       </svg>
@@ -100,21 +101,23 @@
       </li>
     </ul>
     </nav>
+</div>
+<div>
     <div class="modal-header-contact">
-      <ul class="modal-header-nav modal-header-nav-a">
+      <ul class="modal-header-nav-a">
         <li class="contact-modal-header">
     
-    
-    
-          <a href="mailto:info@devstudio.com" class="modal-header-nav-contact ">
-            info@devstudio.com
+    <a href="tel:+380961111111" class="modal-header-nav-contact-tel ">
+            +38 096 111 11 11
           </a>
+    
+          
         </li>
     
         <li class="contact-modal-header">
     
-          <a href="tel:+380961111111" class="modal-header-nav-contact ">
-            +38 096 111 11 11
+          <a href="mailto:info@devstudio.com" class="modal-header-nav-contact-mail ">
+            info@devstudio.com
           </a>
         </li>
       </ul>
@@ -122,12 +125,13 @@
     </div>
     <div class="modal-header-cmi">
       <ul class="modal-header-cmi-ul">
-        <li><a href="" class="modal-header-cmi-li">Instagram</a></li>
-        <li><a href="" class="modal-header-cmi-li">Twitter</a></li>
-        <li><a href="" class="modal-header-cmi-li">Facebook</a></li>
-        <li><a href="" class="modal-header-cmi-li">LinkedIn</a></li>
+        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Instagram</a></li>
+        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Twitter</a></li>
+        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">Facebook</a></li>
+        <li class="modal-header-cmi-li"><a href="" class="modal-header-cmi-li-a">LinkedIn</a></li>
       </ul>
     </div>
+</div>
   </div>
 </div>
 
@@ -559,10 +563,13 @@
             <h2 class="spam-title">Підпишіться на розсилку</h2>
             <form class="spam-form">
             <input type="email" class="spam-input" required placeholder="E-mail" name="user-email-spam" title="info@devstudio.com">
-            <button class="spam-btn"><span class="spam-btn-text">Підписатися</span> 
+            <button class="spam-btn">
+             <div class="spam-btn-div">
+              <span class="spam-btn-text">Підписатися</span> 
               <svg class="spam-icon-send">
                 <use href="./img/symbol-defs.svg#icon-icon-send"></use>
               </svg>
+               </div>
             </button>
             </form>
           </div>
@@ -616,5 +623,6 @@
     </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
