@@ -24,7 +24,7 @@
         @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 30px;
         }
     
@@ -34,6 +34,21 @@
         justify-content: start;
         gap:0;
 }
+}
+
+&-tabeltop-blok{
+    @media screen and (max-width: 767px) {
+            display: block;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+           display: flex;
+        }
+    
+        @media screen and (min-width: 1200px) {
+           
+        }
 }
 
 
@@ -91,15 +106,19 @@
 }
 
 .foot-address{
-@media screen and (max-width: 1199px) {
-      
+
+        @media screen and (max-width: 1199px) {
         text-align: center;
-    }
+        }
 
-    @media screen and (min-width: 1200px) {
-       
+        @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
 
-    }
+        @media screen and (min-width: 1200px) {
+         margin-right: 0;
+
+        }
 }
 
 &-logo {
@@ -307,6 +326,7 @@
             
                 @media screen and (min-width: 768px) {
                     display: flex;
+                    justify-content: center;
                 }
             
                 @media screen and (min-width: 1200px) {

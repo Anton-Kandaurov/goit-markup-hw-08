@@ -315,7 +315,6 @@
   color: var(--accent-color);
 }
 .modal-header-cmi {
-  justify-content: center;
   align-items: center;
 }
 .modal-header-cmi-ul {
@@ -341,6 +340,12 @@
 }
 .modal-header-cmi-li:last-of-type {
   border-right: none;
+}
+.modal-header-cmi-li:first-of-type {
+  padding-left: 0;
+}
+.modal-header-nav {
+  margin-bottom: 64px;
 }
 
 .hero {
@@ -533,32 +538,12 @@
 }
 @media screen and (max-width: 767px) {
   .work {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
   .work {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -567,6 +552,7 @@
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
+    display: flex;
   }
 }
 .work-title {
@@ -704,6 +690,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(---title-N3-text-color);
+  margin-bottom: 10px;
 }
 
 .svg {
@@ -839,7 +826,7 @@
   .footer .foot-con {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
   }
 }
@@ -849,6 +836,17 @@
     flex-wrap: nowrap;
     justify-content: start;
     gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-tabeltop-blok {
+    display: block;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-tabeltop-blok {
+    display: flex;
   }
 }
 .footer-addres {
@@ -900,6 +898,16 @@
 @media screen and (max-width: 1199px) {
   .footer .foot-address {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .foot-address {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .foot-address {
+    margin-right: 0;
   }
 }
 .footer-logo {
@@ -1077,6 +1085,7 @@
 @media screen and (min-width: 768px) {
   .spam-btn-div {
     display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {

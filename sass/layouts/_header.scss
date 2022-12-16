@@ -385,7 +385,6 @@
 
    &-cmi{
     &{
-        justify-content: center;
         align-items: center;
     }
 
@@ -420,6 +419,14 @@
     border-right: none;
     }
 
+    &-li:first-of-type{
+    padding-left: 0;
+    }
+
     
+   }
+
+   &-nav{
+    margin-bottom: 64px;
    }
 }
