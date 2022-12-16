@@ -1,7 +1,7 @@
 .team {
     background-color: var(--backroun-color);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
             
         }
     
@@ -17,7 +17,7 @@
     gap: 30px;
     margin-top: 50px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
          display: block;
          justify-content: center;
     }
@@ -60,7 +60,7 @@
 
 &-list-li:last-of-type {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 0;
     }
 

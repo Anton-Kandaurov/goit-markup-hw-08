@@ -57,7 +57,7 @@ button {
     padding-right: 15px;
     width: 100%;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         width: 480px;
     }
 
@@ -72,7 +72,7 @@ button {
 }
 
 @mixin mobile {
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 767px){
      @content;
     }
 }
