@@ -355,19 +355,19 @@
   .hero {
     padding: 118px 0px;
     max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-hero-1x.jpg), max-width(480px);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-hero-1x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-hero-1x.jpg), max-width(768px);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-hero-1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-hero-1x.jpg), max-width(1600px);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-hero-1x.jpg);
     padding: 200px 0px;
   }
 }
