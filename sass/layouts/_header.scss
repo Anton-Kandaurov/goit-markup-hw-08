@@ -45,7 +45,7 @@
         @media screen and (min-width: 1200px) {}
 }
 
-&navigation{
+&-navigation{
     margin-right: auto;
     display: block;
 }
@@ -68,16 +68,16 @@
     &:focus,
     &:hover {
     color: var(--accent-color);
+}
 
     @media screen and (max-width:767px) {
         padding-top: 16px;
         padding-bottom: 16px;
     }
 
-    @media screen and (min-width:768px) {
-       margin-right: 93px;
-    }
-}
+        @media screen and (min-width:1200px) {
+            margin-right: 93px;
+        }
 
 }
 
@@ -142,8 +142,10 @@
 }
 
 &-navigation{
-
-    margin-left: 88px;
+    
+    @media screen and (max-width:1199px) {
+            margin-left: 88px;
+        }
 }
 
 &-nav-contact {

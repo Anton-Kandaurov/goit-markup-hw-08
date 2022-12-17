@@ -39,7 +39,7 @@
     overflow: hidden;
   }
 }
-.headernavigation {
+.header-navigation {
   margin-right: auto;
   display: block;
 }
@@ -61,13 +61,13 @@
   color: var(--accent-color);
 }
 @media screen and (max-width: 767px) {
-  .header-logo:focus, .header-logo:hover {
+  .header-logo {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-logo:focus, .header-logo:hover {
+@media screen and (min-width: 1200px) {
+  .header-logo {
     margin-right: 93px;
   }
 }
@@ -116,8 +116,10 @@
 .header-nav-li-ac {
   color: var(--accent-color);
 }
-.header-navigation {
-  margin-left: 88px;
+@media screen and (max-width: 1199px) {
+  .header-navigation {
+    margin-left: 88px;
+  }
 }
 .header-nav-contact {
   color: var(--title-N2-text-color);
