@@ -368,7 +368,7 @@
   background-image: url(../img/desktop-hero-1x.jpg);
   background-position: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding: 118px 0px;
     max-width: 480px;
@@ -377,6 +377,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding: 118px 0px;
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-hero-1x.jpg);
   }
@@ -821,6 +822,7 @@
 .footer {
   background-color: var(--hero-footer-color);
   padding: 60px 0px;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .footer {
@@ -1588,6 +1590,7 @@ img {
 
 button {
   cursor: pointer;
+  font-family: "Roboto";
 }
 
 .visually-hidden {
@@ -1609,6 +1612,11 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
