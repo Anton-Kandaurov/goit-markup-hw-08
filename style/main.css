@@ -167,6 +167,16 @@
   color: var(--title-N2-text-color);
   fill: var(--title-N2-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .header .contact-head {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header .contact-head:last-of-type {
+    margin-bottom: 0;
+  }
+}
 .header-nav-a {
   margin-left: auto;
 }
@@ -535,6 +545,7 @@
 
 .work {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 767px) {
   .work {
@@ -553,6 +564,7 @@
     margin-left: auto;
     justify-content: center;
     display: flex;
+    padding-top: 0;
   }
 }
 .work-title {

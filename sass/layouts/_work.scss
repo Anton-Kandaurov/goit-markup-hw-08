@@ -1,6 +1,7 @@
 .work {
     
     padding-top: 0;
+    padding-bottom: 94px;
 
     @media screen and (max-width: 767px) {
            display: none;
@@ -16,6 +17,7 @@
                     margin-left: auto;
                     justify-content: center;
                     display: flex;
+                    padding-top: 0;
                 }
 
 &-title {

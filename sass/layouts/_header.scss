@@ -201,7 +201,19 @@
     gap: 10px;
     color: var(--title-N2-text-color);
     fill: var(--title-N2-text-color);
+
+    @media screen and (max-width: 1199px) {
+            margin-bottom: 10px;
+        }
+
+        &:last-of-type{
+        @media screen and (max-width: 1199px) {
+                margin-bottom: 0;
+            }
+        }
 }
+
+
 
 &-nav-a {
     margin-left: auto;
